@@ -1,3 +1,8 @@
+.main-nav {
+  display: flex;
+  justify-content: center;
+}
+
 .main-nav__toggle {
   background: none;
   width: 24px;
@@ -6,4 +11,13 @@
   border: none;
   padding: 0;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

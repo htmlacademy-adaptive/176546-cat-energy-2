@@ -14,6 +14,7 @@
 }
 
 .address__image {
+  position: relative;
   display: flex;
   justify-content: center;
 }
@@ -25,4 +26,18 @@
 
 .address-catalog {
   background-color: $background-grey;
+}
+
+.address__image:before {
+  position: absolute;
+  content: '';
+  width: 56px;
+  height: 52px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../../icons/map-pin.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }

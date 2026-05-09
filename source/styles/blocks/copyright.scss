@@ -1,3 +1,31 @@
-.copyright {
+.copyright__link {
+  display: block;
+  background-color: $special-grey-second;
 
+  mask-position: center;
+  mask-repeat: no-repeat;
+  transition: background-color 0.3s;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $accent-color-primary;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
+
+.copyright__link--title {
+  width: 112px;
+  height: 15px;
+  mask-image: url("../../images/logo-academy__title.svg");
+}
+
+.copyright__link--image {
+  width: 27px;
+  height: 34px;
+  mask-image: url("../../images/logo-academy.svg");
+}
+

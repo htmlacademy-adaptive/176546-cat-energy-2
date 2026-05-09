@@ -25,17 +25,29 @@
   display: flex;
   justify-content: left;
   align-items: center;
-}
 
-.button--transparent:after {
-  flex-shrink: 0;
-  content: "";
-  width: 32px;
-  height: 10px;
-  background-image: url("../../icons/arrow.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-left: 15px;
+  &::after {
+    flex-shrink: 0;
+    content: "";
+    width: 32px;
+    height: 10px;
+    background-image: url("../../icons/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 15px;
+  }
+
+  &:hover::after,
+  &:focus::after,
+  &:active::after {
+    background-image: url("../../icons/strong-arrow.svg");
+  }
+
+  &:active,
+  &:active::after {
+    opacity: 0.3;
+  }
+
 }
 
 .button--tertiary {
