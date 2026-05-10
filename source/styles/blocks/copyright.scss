@@ -1,6 +1,9 @@
 .copyright__link {
   display: block;
-  background-color: $special-grey-second;
+  color: $special-grey-second;
+
+  font-size: 16px;
+  line-height: 20px;
 
   mask-position: center;
   mask-repeat: no-repeat;
@@ -9,7 +12,7 @@
   &:hover,
   &:focus,
   &:active {
-    background-color: $accent-color-primary;
+    color: $accent-color-primary;
   }
 
   &:active {
@@ -17,15 +20,16 @@
   }
 }
 
-.copyright__link--title {
-  width: 112px;
-  height: 15px;
-  mask-image: url("../../images/logo-academy__title.svg");
-}
-
 .copyright__link--image {
   width: 27px;
   height: 34px;
-  mask-image: url("../../images/logo-academy.svg");
+  mask-image: url("../../icons/stack.svg#logo-academy");
+  background-color: $special-grey-second;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $accent-color-primary;
+  }
 }
 
