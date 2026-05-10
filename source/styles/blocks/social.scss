@@ -5,3 +5,35 @@
   justify-content: center;
   gap: 24px;
 }
+
+.social__link {
+  display: block;
+  width: 28px;
+  height: 22px;
+  background-color: $special-grey-second;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  transition: background-color 0.3s;
+
+  &--vkontakte {
+    mask-image: url("../../icons/stack.svg#vkontakte");
+  }
+
+  &--telegram {
+    mask-image: url("../../icons/stack.svg#telegram");
+  }
+
+  &--youtube {
+    mask-image: url("../../icons/stack.svg#youtube");
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $accent-color-primary;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

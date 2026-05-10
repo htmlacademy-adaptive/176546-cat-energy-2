@@ -1,4 +1,29 @@
 .slider {
+  position: relative;
   display: flex;
   justify-content: center;
+}
+
+.slider__button {
+  position: absolute;
+  content: '';
+  width: 40px;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../../icons/stack.svg#slider-default");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-image: url("../../icons/stack.svg#slider-hover");
+  }
+
+  &:active{
+    background-image: url("../../icons/stack.svg#slider-pressed");
+  }
 }
