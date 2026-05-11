@@ -17,4 +17,8 @@
   &:active {
     background-color: $active-color;
   }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }

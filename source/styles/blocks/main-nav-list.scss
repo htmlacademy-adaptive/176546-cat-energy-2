@@ -2,6 +2,11 @@
   width: 100%;
   text-align: center;
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 33px;
+  }
 }
 
 .main-nav-list__item {
@@ -16,5 +21,5 @@
 }
 
 .main-nav-list:last-child {
-  border-bottom: 1px solid $border-color-button-secondary;
+  //border-bottom: 1px solid $border-color-button-secondary;
 }

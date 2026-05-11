@@ -1,10 +1,70 @@
 .effects {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
 }
 
 .effects__wrapper {
   background-color: $basic-grey;
   padding: 30px 33px 18px 20px;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 77px 300px 53px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 77px 46px 55px 46px;
+  }
+}
+
+.effects__wrapper:after {
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    flex-shrink: 0;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.effects__wrapper--loss:after {
+
+  @media (min-width: $tablet-width) {
+    right: 63px;
+    width: 200px;
+    height: 211px;
+    background-image: url("../../icons/stack.svg#weight-loss");
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.effects__wrapper--gain:after {
+
+  @media (min-width: $tablet-width) {
+    right: 29px;
+    width: 268px;
+    height: 200px;
+    background-image: url("../../icons/stack.svg#weight-gain");
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .effects__title {
@@ -16,6 +76,12 @@
   line-height: 37px;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .effects__title:before {
@@ -23,6 +89,14 @@
   content: "";
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .effects__title--loss:before {
@@ -30,6 +104,11 @@
   height: 53px;
   background-image: url("../../icons/stack.svg#weight-loss");
   margin-right: 20px;
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 106px;
+  }
 }
 
 .effects__title--gain:before {
@@ -37,4 +116,19 @@
   height: 50px;
   background-image: url("../../icons/stack.svg#weight-gain");
   margin-right: 11px;
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 100px;
+  }
+}
+
+.effects__description {
+  margin: 0;
+  margin-bottom: 48px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
