@@ -8,7 +8,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $basic-grey;
+    background-image:
+      linear-gradient(to bottom, $second-color-title 139px, $basic-grey 139px, $basic-grey 100%);
   }
 }
 

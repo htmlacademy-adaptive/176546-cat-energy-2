@@ -12,7 +12,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     min-height: 598px;
-    background-color: $basic-grey;
+    background-image:
+      linear-gradient(to bottom, $second-color-title 164px, $basic-grey 164px, $basic-grey 100%);
+    max-width: 1440px;
+    margin:0 auto
+
   }
 }
 
@@ -56,7 +60,8 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    display: inline-flex;
+    display: flex;
+    flex-direction: column;
     margin: 0;
     max-width: 180px;
     font-size: 20px;
@@ -65,6 +70,13 @@
 
   @media (min-width: $desktop-width) {
     max-width: 436px;
+    flex-direction: row;
+  }
+}
+
+.example__price span {
+  @media (min-width: $desktop-width) {
+    margin-left: 64px;
   }
 }
 
