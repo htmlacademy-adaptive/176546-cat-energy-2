@@ -3,4 +3,17 @@
   padding-top: 27px;
   padding-bottom: 41px;
   letter-spacing: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 84px;
+  }
+}
+
+.catalog__list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
 }

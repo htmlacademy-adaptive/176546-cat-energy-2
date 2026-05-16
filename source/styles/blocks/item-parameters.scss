@@ -1,4 +1,11 @@
 .item-parameters__wrapper {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $parameters-title-border-bolor;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
 }
