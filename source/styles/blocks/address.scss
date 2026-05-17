@@ -76,8 +76,12 @@
   margin-top: 20px;
 }
 
-.address-catalog {
+.address__catalog {
   background-color: $background-grey;
+
+  @media (min-width: $desktop-width) {
+    background-color: $second-color-title;
+  }
 }
 
 .address__image:before {
