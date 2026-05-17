@@ -25,6 +25,10 @@
     line-height: 24px;
     color: $second-color-title;
   }
+
+  @media (min-width: $desktop-width) {
+    color: $calm-color;
+  }
 }
 
 .button--transparent {

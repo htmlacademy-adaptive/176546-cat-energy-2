@@ -2,8 +2,10 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    margin-top: 75px;
     align-content: end;
-    padding: 50px 37px 40px;
+    padding: 0 37px 40px 37px;
+    border: 1px solid $basic-grey;
   }
 }
 
@@ -49,5 +51,6 @@
     margin-bottom: 82px;
     font-size: 16px;
     line-height: 18px;
+    max-width: 175px;
   }
 }
