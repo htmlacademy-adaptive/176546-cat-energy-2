@@ -1,7 +1,27 @@
 .main-nav-list {
   width: 100%;
   text-align: center;
-  display: none;
+  //display: none;
+
+  @media (max-width: $mobile-width-only) {
+    &--opened {
+      z-index: 1;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 66px;
+      background-color: $second-color-title;
+    }
+
+    &--closed {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 33px;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
