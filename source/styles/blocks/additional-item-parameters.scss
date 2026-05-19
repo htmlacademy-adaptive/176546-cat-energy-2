@@ -6,7 +6,7 @@
 
   @media (min-width: $tablet-width) {
     display: inline-flex;
-    margin-bottom: 25px;
+    margin: 0;
     margin-left: auto;
   }
 
@@ -15,6 +15,7 @@
     font-size: 16px;
     line-height: 20px;
     min-width: 285px;
+    margin-right: 40px;
   }
 }
 

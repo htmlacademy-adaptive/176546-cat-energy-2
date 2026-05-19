@@ -13,7 +13,6 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    margin-bottom: 25px;
     display: inline-flex;
   }
 
@@ -29,6 +28,6 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-right: 28px;
+    margin-bottom: 25px;
   }
 }

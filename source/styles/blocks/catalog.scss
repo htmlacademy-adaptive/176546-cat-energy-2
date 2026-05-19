@@ -1,3 +1,9 @@
+.catalog {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 74px;
+  }
+}
+
 .catalog__title {
   line-height: 36px;
   padding-top: 27px;
@@ -7,9 +13,6 @@
   @media (min-width: $tablet-width) {
     padding-top: 0;
     padding-bottom: 84px;
-  }
-
-  @media (min-width: $desktop-width) {
     font-size: 60px;
     line-height: 60px;
   }
