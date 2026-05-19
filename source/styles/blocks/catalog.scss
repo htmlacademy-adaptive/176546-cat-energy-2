@@ -1,6 +1,32 @@
+.catalog {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 74px;
+  }
+}
+
 .catalog__title {
   line-height: 36px;
   padding-top: 27px;
   padding-bottom: 41px;
   letter-spacing: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 84px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.catalog__list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+  }
 }

@@ -1,6 +1,17 @@
 .main-nav {
   display: flex;
+  align-items: center;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .main-nav__toggle {
@@ -19,5 +30,9 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

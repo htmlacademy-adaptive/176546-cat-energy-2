@@ -3,4 +3,26 @@
   justify-content: space-between;
   line-height: 14px;
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    display: inline-flex;
+    margin: 0;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+    min-width: 285px;
+    margin-right: 40px;
+  }
+}
+
+.additional-item-parameters__key {
+  margin-right: 49px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
 }

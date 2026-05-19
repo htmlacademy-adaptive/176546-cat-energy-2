@@ -10,7 +10,7 @@
     <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   </head>
   <body class="page__body">
-    <header class="main-header">
+    <header class="main-header container">
       <a class="main-header__logo main-header__logo--primary" href="index.html">
         <picture>
           <source width="60" height="50" type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/logo-desktop.svg">
@@ -58,7 +58,7 @@
                 </div>
                 <div class="item-parameters__wrapper">
                   <dt class="item-parameters__key">Вкус</dt>
-                  <dd class="item-parameters__value">Курина</dd>
+                  <dd class="item-parameters__value">Курица</dd>
                 </div>
                 <div class="item-parameters__wrapper">
                   <dt class="item-parameters__key">Цена</dt>
@@ -85,7 +85,7 @@
                 </div>
                 <div class="item-parameters__wrapper">
                   <dt class="item-parameters__key">Вкус</dt>
-                  <dd class="item-parameters__value">Курина</dd>
+                  <dd class="item-parameters__value">Курица</dd>
                 </div>
                 <div class="item-parameters__wrapper">
                   <dt class="item-parameters__key">Цена</dt>
@@ -240,50 +240,60 @@
       </section>
 
       <section class="additional container">
-        <h1 class="additional__title">Дополнительные товары</h1>
-        <ul class="additional__list list-reset">
-          <li class="additional__item additional-item">
-            <h2 class="additional-item__title">Сахарозаменитель</h2>
-            <div class="additional-item__parameters additional-item-parameters">
-              <span class="additional-item-parameters__key">1 упаковка (100 г)</span>
-              <span class="additional-item-parameters__value">200 р</span>
-            </div>
-            <a class="button button--primary" href="checkout.html">Заказать</a>
-          </li>
-          <li class="additional__item additional-item">
-            <h2 class="additional-item__title">Питьевая вода</h2>
-            <div class="additional-item__parameters additional-item-parameters">
-              <span class="additional-item-parameters__key">5 литров</span>
-              <span class="additional-item-parameters__value">50 р</span>
-            </div>
-            <a class="button button--primary" href="checkout.html">Заказать</a>
-          </li>
-          <li class="additional__item additional-item">
-            <h2 class="additional-item__title">Молоко</h2>
-            <div class="additional-item__parameters additional-item-parameters">
-              <span class="additional-item-parameters__key">1 литр</span>
-              <span class="additional-item-parameters__value">100 р</span>
-            </div>
-            <a class="button button--primary" href="checkout.html">Заказать</a>
-          </li>
-          <li class="additional__item additional-item">
-            <h2 class="additional-item__title">Витамины</h2>
-            <div class="additional-item__parameters additional-item-parameters">
-              <span class="additional-item-parameters__key">1 упаковка (30 г)</span>
-              <span class="additional-item-parameters__value">300 р</span>
-            </div>
-            <a class="button button--primary" href="checkout.html">Заказать</a>
-          </li>
-        </ul>
+        <h1 class="additional__title title">Дополнительные товары</h1>
+        <div class="additional__wrapper">
+          <ul class="additional__list list-reset">
+            <li class="additional__item additional-item">
+              <div class="additional-item__wrapper">
+                <h2 class="additional-item__title">Сахарозаменитель</h2>
+                <div class="additional-item__parameters additional-item-parameters">
+                  <span class="additional-item-parameters__key">1 упаковка (100 г)</span>
+                  <span class="additional-item-parameters__value">200 р</span>
+                </div>
+              </div>
+              <a class="button button--primary additional__button" href="checkout.html">Заказать</a>
+            </li>
+            <li class="additional__item additional-item">
+              <div class="additional-item__wrapper">
+                <h2 class="additional-item__title">Питьевая вода</h2>
+                <div class="additional-item__parameters additional-item-parameters">
+                  <span class="additional-item-parameters__key">5 литров</span>
+                  <span class="additional-item-parameters__value">50 р</span>
+                </div>
+              </div>
+              <a class="button button--primary additional__button" href="checkout.html">Заказать</a>
+            </li>
+            <li class="additional__item additional-item">
+              <div class="additional-item__wrapper">
+                <h2 class="additional-item__title">Молоко</h2>
+                <div class="additional-item__parameters additional-item-parameters">
+                  <span class="additional-item-parameters__key">1 литр</span>
+                  <span class="additional-item-parameters__value">100 р</span>
+                </div>
+              </div>
+              <a class="button button--primary additional__button" href="checkout.html">Заказать</a>
+            </li>
+            <li class="additional__item additional-item">
+              <div class="additional-item__wrapper">
+                <h2 class="additional-item__title">Витамины</h2>
+                <div class="additional-item__parameters additional-item-parameters">
+                  <span class="additional-item-parameters__key">1 упаковка (30 г)</span>
+                  <span class="additional-item-parameters__value">300 р</span>
+                </div>
+              </div>
+              <a class="button button--primary additional__button" href="checkout.html">Заказать</a>
+            </li>
+          </ul>
 
-        <div class="additional__present present">
-          <h1 class="visually-hidden">Подарок за покупку</h1>
-          <p class="present__description">Закажите все и получите чехол для кота в подарок!</p>
+          <div class="additional__present present">
+            <h2 class="visually-hidden">Подарок за покупку</h2>
+            <p class="present__description">Закажите все и получите чехол для кота в подарок!</p>
+          </div>
         </div>
       </section>
 
       <section class="promotions container">
-        <h1 class="promotions__title">Акции и новинки</h1>
+        <h2 class="promotions__title">Акции и новинки</h2>
         <p class="promotions__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
         <form class="promotions__form form-subscribe" action="https://echo.htmlacademy.ru" method="post">
           <label class="form-subscribe__label" for="form-subscribe-email"></label>
@@ -293,9 +303,11 @@
       </section>
 
       <section class="address">
-        <div class="address__wrapper address-catalog">
+        <div class="address__wrapper address__catalog">
           <h2 class="address__title">Приглашаем к сотрудничеству дилеров!</h2>
-          <address class="address__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <address class="address__description">ул. Большая Конюшенная, д. 19/8
+            <span>Санкт-Петербург</span>
+          </address>
         </div>
         <picture class="address__image">
           <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="./images/address-desktop@1x.jpg 1x, ./images/address-desktop@2x.jpg 2x">

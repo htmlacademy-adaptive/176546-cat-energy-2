@@ -1,3 +1,14 @@
+.form-subscribe {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 732px;
+    margin: 0 auto;
+  }
+}
+
 .form-subscribe__email {
   margin-bottom: 16px;
   border: 1px solid $parameters-title-border-bolor;
@@ -7,4 +18,13 @@
   font-size: 20px;
   color: $base-color-description;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    flex-grow: 2;
+  }
 }

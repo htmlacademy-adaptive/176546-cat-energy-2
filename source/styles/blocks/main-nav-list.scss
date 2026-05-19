@@ -1,7 +1,32 @@
 .main-nav-list {
   width: 100%;
   text-align: center;
-  display: none;
+  //display: none;
+
+  @media (max-width: $mobile-width-only) {
+    &--opened {
+      z-index: 1;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 66px;
+      background-color: $second-color-title;
+    }
+
+    &--closed {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 33px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 33px;
+  }
 }
 
 .main-nav-list__item {
@@ -9,12 +34,12 @@
   font-size: 20px;
   line-height: 20px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
   }
 }
 
 .main-nav-list:last-child {
-  border-bottom: 1px solid $border-color-button-secondary;
+  //border-bottom: 1px solid $border-color-button-secondary;
 }

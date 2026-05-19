@@ -1,17 +1,42 @@
 .parameters__title {
   border: 1px solid $parameters-title-border-bolor;
-  padding: 15px 43px 18px;
+  padding: 15px 29px 18px;
   border-radius: 3px;
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
   color: $base-color-title;
+
+  &--loss {
+    padding: 15px 39px 18px;
+
+    @media (min-width: $tablet-width) {
+      padding: 15px 57px 20px;
+    }
+  }
+
+    &--time {
+    padding: 15px 20px 18px;
+
+      @media (min-width: $tablet-width) {
+        padding: 15px 30px 20px;
+    }
+  }
 }
 
 .parameters__wrapper {
   position: relative;
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .parameters__description {
@@ -26,4 +51,26 @@
   top: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet-width) {
+    background-color: $second-color-title;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-grey;
+  }
+
+  &--loss {
+    @media (min-width: $tablet-width) {
+      min-width: 96px;
+      transform: translate(-50%, -70%);
+    }
+  }
+
+  &--time {
+    @media (min-width: $tablet-width) {
+      min-width: 125px;
+      transform: translate(-50%, -70%);
+    }
+  }
 }

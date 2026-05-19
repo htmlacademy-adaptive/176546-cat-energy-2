@@ -18,7 +18,17 @@
 .button--secondary {
   padding-top: 22px;
   padding-bottom: 24px;
-  border-top: 1px solid $border-color-button-secondary;
+  //border-top: 1px solid $border-color-button-secondary;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 24px;
+    color: $second-color-title;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $calm-color;
+  }
 }
 
 .button--transparent {
@@ -48,6 +58,9 @@
     opacity: 0.3;
   }
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .button--tertiary {
