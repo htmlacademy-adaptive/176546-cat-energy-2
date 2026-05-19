@@ -2,6 +2,11 @@
   @media (min-width: $tablet-width) {
     display: flex;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 732px;
+    margin: 0 auto;
+  }
 }
 
 .form-subscribe__email {
@@ -16,5 +21,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    flex-grow: 2;
   }
 }
