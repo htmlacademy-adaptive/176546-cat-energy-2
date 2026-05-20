@@ -4,7 +4,9 @@
   justify-content: center;
 
   @media (min-width: $tablet-width) {
-    background-color: $background-grey;
+    background-image:
+      linear-gradient(to bottom, $second-color-title 155px, $basic-grey 155px, $background-grey 100%);
+    padding-bottom: 101px;
   }
 
   @media (min-width: $desktop-width) {

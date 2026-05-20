@@ -15,7 +15,8 @@
   letter-spacing: 0;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 80px;
+    display: flex;
+    padding: 60px 70px;
     gap: 0;
     justify-content: space-between;
   }
@@ -98,4 +99,10 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+
+  @media (min-width: $tablet-width) {
+    width: 113px;
+    height: 106px;
+    top: 50%;
+  }
 }
