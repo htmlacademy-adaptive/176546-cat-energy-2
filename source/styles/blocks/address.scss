@@ -25,6 +25,7 @@
     position: absolute;
     z-index: 1;
     background-color: $second-color-title;
+    padding: 60px 70px 60px 80px;
     gap: 87px;
     top: 95px;
     left: 110px;
@@ -104,5 +105,10 @@
     width: 113px;
     height: 106px;
     top: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 46%;
+    left: 67%;
   }
 }

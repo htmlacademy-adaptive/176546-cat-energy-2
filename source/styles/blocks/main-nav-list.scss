@@ -25,7 +25,12 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    gap: 36px;
+    transform: translateX(-5px);
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    transform: translate(-3px, -4px);
   }
 }
 
@@ -33,17 +38,15 @@
   font-family: $secondary-font;
   font-size: 20px;
   line-height: 20px;
+  border-top: 1px solid $border-color-button-secondary;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
+    border: none;
   }
-}
 
-.main-nav-list__item {
-  border-top: 1px solid $border-color-button-secondary;
-
-   @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     border: none;
    }
 }

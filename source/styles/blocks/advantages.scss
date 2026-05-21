@@ -5,6 +5,12 @@
     padding-bottom: 58px;
     border-bottom: 1px solid $border-color-button-secondary;
   }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+    padding-bottom: 0;
+    margin-bottom: 78px;
+  }
 }
 
 .advantages__title {
@@ -31,7 +37,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 94px;
+    gap: 75px;
   }
 }
 

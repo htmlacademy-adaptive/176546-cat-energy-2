@@ -16,7 +16,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 500px;
+    min-height: 468px;
+    margin-bottom: 82px;
   }
 }
 
@@ -64,6 +65,11 @@
     margin-bottom: 21px;
     padding-left: 90px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .promo__picture {
@@ -81,7 +87,7 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     right: 0;
-    transform: translate(-60%, -50%);
+    transform: translate(-60%, -52%);
   }
 }
 
@@ -106,5 +112,10 @@
     font-size: 20px;
     line-height: 26px;
     margin-left: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 14px 28px;
   }
 }

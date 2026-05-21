@@ -13,6 +13,15 @@
   color: $second-color-title;
   background-color: $accent-color-primary;
   padding: 10px 0;
+
+  &:hover,
+  &:active {
+    background-color: $basic-green;
+  }
+
+  &:active {
+    color: $second-color-title-opacity;
+  }
 }
 
 .button--secondary {
@@ -42,6 +51,10 @@
   align-items: center;
   letter-spacing: 0;
 
+  @media (min-width: $tablet-width) {
+    max-width: 170px;
+  }
+
   &::after {
     flex-shrink: 0;
     content: "";
@@ -51,6 +64,10 @@
     background-repeat: no-repeat;
     background-position: center;
     margin-left: 15px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 27px;
+    }
   }
 
   &:hover::after,

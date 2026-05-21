@@ -14,10 +14,10 @@
     grid-template-columns: 1fr 1fr;
     min-height: 598px;
     background-image:
-      linear-gradient(to bottom, $second-color-title 164px, $basic-grey 164px, $basic-grey 100%);
+      linear-gradient(to bottom, $second-color-title 137px, $basic-grey 137px, $basic-grey 100%);
     max-width: 1440px;
-    margin:0 auto
-
+    margin:0 auto;
+    padding: 0;
   }
 }
 
@@ -84,6 +84,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 0;
     margin-left: 64px;
   }
 }
@@ -104,7 +105,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    margin-bottom: 55px;
+    margin-bottom: 61px;
   }
 }
 
@@ -119,7 +120,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 436px;
+    max-width: 432px;
     margin-bottom: 69px;
   }
 }

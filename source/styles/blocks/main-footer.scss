@@ -8,6 +8,11 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 53px;
+    padding-bottom: 50px;
+  }
 }
 
 .main-footer__logo {
