@@ -1,6 +1,7 @@
 .catalog-item {
-  padding-top: 20px;
-  padding-bottom: 25px;
+  position: relative;
+  padding-top: 23px;
+  padding-bottom: 26px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -12,6 +13,24 @@
     background-color: $basic-grey;
     background-image:
       linear-gradient(to bottom, $second-color-title 75px, $basic-grey 75px, $basic-grey 100%);
+  }
+
+  &--last-item {
+    @media (max-width: $mobile-width-only) {
+      margin-bottom: 80px;
+    }
+  }
+
+  &::after {
+    @media (max-width: $mobile-width-only) {
+      position: absolute;
+      content: "";
+      left: -20px;
+      right: -20px;
+      bottom: 0;
+      height: 1px;
+      background-color: $special-grey-fifth;
+    }
   }
 }
 
@@ -49,6 +68,7 @@
   text-transform: uppercase;
   font-weight: 400;
   max-width: 80px;
+  letter-spacing: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

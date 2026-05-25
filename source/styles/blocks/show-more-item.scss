@@ -10,6 +10,7 @@
 }
 
 .show-more-item__title {
+  position: relative;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -28,15 +29,24 @@
 .show-more-item__title:before {
   position: absolute;
   content: '';
-  width: 60px;
-  height: 60px;
-  bottom: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-image: url("../../icons/stack.svg#plus");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+
+  @media (max-width: $mobile-width-only) {
+    width: 30px;
+    height: 30px;
+    top: -40px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+    bottom: 100%;
+  }
 }
 
 .show-more-item__description {
@@ -46,6 +56,7 @@
   line-height: 16px;
   color: $base-color-description;
   border: none;
+  letter-spacing: 0;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 82px;

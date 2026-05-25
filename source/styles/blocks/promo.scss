@@ -3,7 +3,8 @@
   margin-bottom: 20px;
   background-image:
     linear-gradient(to bottom, $accent-color-primary-opacity 302px, transparent 302px),
-    url("../../images/index-background-mobile@1x.jpg");
+    url("../../images/index-background-mobile@1x.jpg"),
+    linear-gradient(to bottom, $accent-color-secondary 302px, transparent 302px);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: contain, 320Px 302px;

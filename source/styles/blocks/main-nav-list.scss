@@ -30,7 +30,9 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    transform: translate(-3px, -4px);
+    gap: 35px;
+    transform: translate(0, -4px);
+    letter-spacing: 0;
   }
 }
 

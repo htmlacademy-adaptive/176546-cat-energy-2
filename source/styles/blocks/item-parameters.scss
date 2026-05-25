@@ -1,6 +1,8 @@
 .item-parameters__wrapper {
   display: flex;
   justify-content: space-between;
+  font-size: 12px;
+  line-height: 16px;
 
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid $parameters-title-border-bolor;

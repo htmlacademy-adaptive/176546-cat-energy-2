@@ -1,4 +1,11 @@
 .example {
+  @media (min-width: $desktop-width) {
+    background-image:
+      linear-gradient(to bottom, $second-color-title 137px, $basic-grey 137px, $basic-grey 100%);
+  }
+}
+
+.example__container {
   background-color: $background-grey;
   padding-top: 25px;
   padding-bottom: 36px;
