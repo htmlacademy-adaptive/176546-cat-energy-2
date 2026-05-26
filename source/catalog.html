@@ -10,33 +10,35 @@
     <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   </head>
   <body class="page__body">
-    <header class="main-header container main-header--border">
-      <a class="main-header__logo main-header__logo--primary" href="index.html">
-        <picture>
-          <source width="60" height="50" type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/logo-desktop.svg">
-          <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-tablet.svg">
-          <img class="main-header__logo-primary" src="images/main-header__logo-primary.svg" width="33" height="38" alt="Магазин Cat Energy">
-        </picture>
+    <header class="main-header main-header--catalog">
+      <div class="main-header__container container">
+        <a class="main-header__logo main-header__logo--primary" href="index.html">
+          <picture>
+            <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/logo-desktop.svg">
+            <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-tablet.svg">
+            <img class="main-header__logo-primary" src="images/main-header__logo-primary.svg" width="33" height="38" alt="Магазин Cat Energy">
+          </picture>
 
-        <img class="main-header__logo--secondary" src="./images/main-header__logo-secodary.svg" width="101" height="18" alt="Логотип текст">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Переключить меню</span>
-        </button>
+          <img class="main-header__logo--secondary" src="./images/main-header__logo-secodary.svg" width="101" height="18" alt="Логотип текст">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Переключить меню</span>
+          </button>
 
-        <ul class="main-nav__list main-nav-list list-reset main-nav-list--closed main-nav-list--nojs">
-          <li class="main-nav-list__item main-nav__item--active">
-            <a class="button button--secondary" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav-list__item">
-            <a class="button button--secondary button--secondary--active" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-nav-list__item">
-            <a class="button button--secondary" href="programs.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
+          <ul class="main-nav__list main-nav-list list-reset main-nav-list--closed main-nav-list--nojs">
+            <li class="main-nav-list__item">
+              <a class="button button--secondary button--secondary-catalog" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav-list__item">
+              <a class="button button--secondary button--secondary-active button--secondary-catalog" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav-list__item">
+              <a class="button button--secondary button--secondary-catalog" href="programs.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="main-container">
@@ -63,7 +65,7 @@
                 </div>
                 <div class="item-parameters__wrapper">
                   <dt class="item-parameters__key">Цена</dt>
-                  <dd class="item-parameters__value">700 Р</dd>
+                  <dd class="item-parameters__value">700 ₽</dd>
                 </div>
               </dl>
             </div>
@@ -73,7 +75,7 @@
           <li class="catalog__item catalog-item">
             <div class="catalog-item__picture">
               <picture>
-                <source width="161" height="172" type="image/png" media="(min-width: 768px)" srcset="./images/catalog-chicken-1000@1x.png 1x, ./images/catalog-chicken-1000@2x.png 2x">
+                <source width="168" height="206" type="image/png" media="(min-width: 768px)" srcset="./images/catalog-chicken-1000@1x.png 1x, ./images/catalog-chicken-1000@2x.png 2x">
                 <img class="catalog-item__image" src="./images/catalog-chicken-1000-mobile@1x.png" srcset="./images/catalog-chicken-1000-mobile@2x.png 2x" width="84" height="100" alt="Со вкусом курицы 1000 грамм">
               </picture>
             </div>
@@ -90,7 +92,7 @@
                 </div>
                 <div class="item-parameters__wrapper">
                   <dt class="item-parameters__key">Цена</dt>
-                  <dd class="item-parameters__value">1000 Р</dd>
+                  <dd class="item-parameters__value">1000 ₽</dd>
                 </div>
               </dl>
             </div>
@@ -117,7 +119,7 @@
                 </div>
                 <div class="item-parameters__wrapper">
                   <dt class="item-parameters__key">Цена</dt>
-                  <dd class="item-parameters__value">700 Р</dd>
+                  <dd class="item-parameters__value">700 ₽</dd>
                 </div>
               </dl>
             </div>
@@ -144,7 +146,7 @@
                 </div>
                 <div class="item-parameters__wrapper">
                   <dt class="item-parameters__key">Цена</dt>
-                  <dd class="item-parameters__value">1000 Р</dd>
+                  <dd class="item-parameters__value">1000 ₽</dd>
                 </div>
               </dl>
             </div>
@@ -171,7 +173,7 @@
                 </div>
                 <div class="item-parameters__wrapper">
                   <dt class="item-parameters__key">Цена</dt>
-                  <dd class="item-parameters__value">400 Р</dd>
+                  <dd class="item-parameters__value">400 ₽</dd>
                 </div>
               </dl>
             </div>
@@ -181,7 +183,7 @@
           <li class="catalog__item catalog-item">
             <div class="catalog-item__picture">
               <picture>
-                <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="./images/catalog-buckwheat-1000@1x.png 1x, ./images/catalog-buckwheat-1000@2x.png 2x">
+                <source width="168" height="200" type="image/png" media="(min-width: 768px)" srcset="./images/catalog-buckwheat-1000@1x.png 1x, ./images/catalog-buckwheat-1000@2x.png 2x">
                 <img class="catalog-item__image" src="./images/catalog-buckwheat-1000-mobile@1x.png" srcset="./images/catalog-buckwheat-1000-mobile@2x.png 2x" width="84" height="100" alt="Со вкусом гречки 1000 грамм">
               </picture>
             </div>
@@ -198,7 +200,7 @@
                 </div>
                 <div class="item-parameters__wrapper">
                   <dt class="item-parameters__key">Цена</dt>
-                  <dd class="item-parameters__value">700 Р</dd>
+                  <dd class="item-parameters__value">700 ₽</dd>
                 </div>
               </dl>
             </div>
@@ -225,7 +227,7 @@
                 </div>
                 <div class="item-parameters__wrapper">
                   <dt class="item-parameters__key">Цена</dt>
-                  <dd class="item-parameters__value">500 Р</dd>
+                  <dd class="item-parameters__value">500 ₽</dd>
                 </div>
               </dl>
             </div>
@@ -249,7 +251,7 @@
                 <h2 class="additional-item__title">Сахарозаменитель</h2>
                 <div class="additional-item__parameters additional-item-parameters">
                   <span class="additional-item-parameters__key">1 упаковка (100 г)</span>
-                  <span class="additional-item-parameters__value">200 р</span>
+                  <span class="additional-item-parameters__value">200 ₽</span>
                 </div>
               </div>
               <a class="button button--primary additional__button" href="checkout.html">Заказать</a>
@@ -259,7 +261,7 @@
                 <h2 class="additional-item__title">Питьевая вода</h2>
                 <div class="additional-item__parameters additional-item-parameters">
                   <span class="additional-item-parameters__key">5 литров</span>
-                  <span class="additional-item-parameters__value">50 р</span>
+                  <span class="additional-item-parameters__value">50 ₽</span>
                 </div>
               </div>
               <a class="button button--primary additional__button" href="checkout.html">Заказать</a>
@@ -269,7 +271,7 @@
                 <h2 class="additional-item__title">Молоко</h2>
                 <div class="additional-item__parameters additional-item-parameters">
                   <span class="additional-item-parameters__key">1 литр</span>
-                  <span class="additional-item-parameters__value">100 р</span>
+                  <span class="additional-item-parameters__value">100 ₽</span>
                 </div>
               </div>
               <a class="button button--primary additional__button" href="checkout.html">Заказать</a>
@@ -279,7 +281,7 @@
                 <h2 class="additional-item__title">Витамины</h2>
                 <div class="additional-item__parameters additional-item-parameters">
                   <span class="additional-item-parameters__key">1 упаковка (30 г)</span>
-                  <span class="additional-item-parameters__value">300 р</span>
+                  <span class="additional-item-parameters__value">300 ₽</span>
                 </div>
               </div>
               <a class="button button--primary additional__button" href="checkout.html">Заказать</a>
@@ -288,7 +290,7 @@
 
           <div class="additional__present present">
             <h2 class="visually-hidden">Подарок за покупку</h2>
-            <p class="present__description">Закажите все и получите чехол для кота в подарок!</p>
+            <p class="present__description">Закажите все<br> и получите чехол для кота в подарок!</p>
           </div>
         </div>
       </section>
@@ -304,42 +306,46 @@
       </section>
 
       <section class="address">
-        <div class="address__wrapper address__catalog">
-          <h2 class="address__title">Приглашаем к сотрудничеству дилеров!</h2>
-          <address class="address__description">ул. Большая Конюшенная, д. 19/8
-            <span>Санкт-Петербург</span>
-          </address>
+        <div class="address__container">
+          <div class="address__wrapper address__wrapper--catalog">
+            <h2 class="address__title">Приглашаем<br> к сотрудничеству дилеров!</h2>
+            <address class="address__description">ул. Большая Конюшенная, д. 19/8
+              <span>Санкт-Петербург</span>
+            </address>
+          </div>
+          <picture class="address__image">
+            <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="./images/address-desktop@1x.jpg 1x, ./images/address-desktop@2x.jpg 2x">
+            <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="./images/address-tablet@1x.jpg 1x, ./images/address-tablet@2x.jpg 2x">
+            <img src="./images/address-mobile@1x.jpg" srcset="./images/address-mobile@2x.jpg 2x" width="320" height="362" alt="карта">
+          </picture>
         </div>
-        <picture class="address__image">
-          <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="./images/address-desktop@1x.jpg 1x, ./images/address-desktop@2x.jpg 2x">
-          <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="./images/address-tablet@1x.jpg 1x, ./images/address-tablet@2x.jpg 2x">
-          <img src="./images/address-mobile@1x.jpg" srcset="./images/address-mobile@2x.jpg 2x" width="320" height="362" alt="карта">
-        </picture>
       </section>
     </main>
 
-    <footer class="main-footer container">
-      <a class="main-footer__logo footer-logo" href="index.html"></a>
-      <ul class="social list-reset">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">В контакте</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">YouTube</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Телеграм</span>
-          </a>
-        </li>
-      </ul>
-      <div class="main-footer__copyright copyright">
-        <a class="copyright__link copyright__link--title" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="copyright__link copyright__link--image" href="https://htmlacademy.ru/intensive/adaptive"></a>
+    <footer class="main-footer">
+      <div class="main-footer__container container">
+                <a class="main-footer__logo footer-logo" href="index.html"></a>
+        <ul class="social list-reset">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">В контакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">YouTube</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+        </ul>
+        <div class="main-footer__copyright copyright">
+          <a class="copyright__link copyright__link--title" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link copyright__link--image" href="https://htmlacademy.ru/intensive/adaptive"></a>
+        </div>
       </div>
     </footer>
 

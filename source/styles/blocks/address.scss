@@ -36,6 +36,20 @@
     top: 95px;
     left: 110px;
   }
+
+  &--catalog {
+    @media (max-width: $mobile-width-only) {
+      background-color: $basic-grey;
+    }
+
+    @media (min-width: $tablet-width) {
+      background-color: $basic-grey;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-color: $second-color-title;
+    }
+  }
 }
 
 .address__title {

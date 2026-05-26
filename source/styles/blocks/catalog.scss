@@ -1,6 +1,7 @@
 .catalog {
   @media (min-width: $tablet-width) {
     padding-bottom: 25px;
+    margin-bottom: 25px;
   }
 }
 
@@ -35,11 +36,20 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    gap: 67px 60px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 80px;
+    gap: 71px 80px;
+  }
+}
+
+.catalog__button {
+  margin-top: 17px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 24px;
   }
 }

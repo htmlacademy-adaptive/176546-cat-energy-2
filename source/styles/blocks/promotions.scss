@@ -1,9 +1,19 @@
 .promotions {
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 40px;
+  letter-spacing: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 102px;
+  }
 }
 
 .promotions__title {
+  position: relative;
   margin: 0;
   font-family: $secondary-font;
   font-size: 24px;
@@ -14,11 +24,58 @@
   @media (min-width: $tablet-width) {
     font-size: 32px;
     line-height: 32px;
+    padding-left: 40px;
+    margin-bottom: 66px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 40px;
     line-height: 40px;
+    padding-left: 0;
+    margin-bottom: 71px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: $accent-color-primary;
+    height: 2px;
+
+    @media (max-width: $mobile-width-only) {
+      left: 16vh;
+      right: -20px;
+      top: 10px;
+    }
+
+    @media (min-width: $tablet-width) {
+      top: 13px;
+      left: 23vh;
+      right: -30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 18px;
+      left: 24vh;
+      right: -109px;
+    }
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      content: "";
+      right: 58vh;
+      left: -30px;
+      top: 13px;
+      height: 2px;
+      background-color: $accent-color-primary;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 18px;
+      left: -110px;
+      right: 103vh;
+    }
   }
 }
 
@@ -34,14 +91,17 @@
     font-size: 24px;
     line-height: 32px;
     max-width: 632px;
+    margin: 0 auto;
+    margin-bottom: 24px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     max-width: 100%;
   }
 }
 
 .promotions__button {
+  padding: 15px 0;
   font-size: 20px;
   line-height: 26px;
   width: 100%;

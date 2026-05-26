@@ -1,51 +1,43 @@
 .example {
+  @media (min-width: $tablet-width) {
+    padding-top: 17px;
+    padding-bottom: 0;
+    background-image: linear-gradient(
+        to top,
+        $basic-grey 462px,
+        $second-color-title 462px
+    );
+  }
+
   @media (min-width: $desktop-width) {
-    background-image:
-      linear-gradient(to bottom, $second-color-title 137px, $basic-grey 137px, $basic-grey 100%);
+    padding: 0;
+    background-image: linear-gradient(
+        to bottom,
+        $second-color-title 180px,
+        $basic-grey 180px
+    );
   }
 }
 
 .example__container {
-  background-color: $background-grey;
   padding-top: 25px;
   padding-bottom: 36px;
 
-  @media (min-width: $tablet-width) {
-    background-color: $second-color-title;
-    padding-top: 45px;
-    padding-bottom: 0;
-  }
+  //@media (min-width: $tablet-width) {
+  //  padding-top: 45px;
+  //  padding-bottom: 0;
+  //}
 
   @media (min-width: $desktop-width) {
+    padding-top: 40px;
+    padding-bottom: 19px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     min-height: 598px;
-    background-image:
-      linear-gradient(to bottom, $second-color-title 137px, $basic-grey 137px, $basic-grey 100%);
-    max-width: 1440px;
-    margin:0 auto;
-    padding: 0;
-  }
-}
-
-.example__wrapper {
-  padding: 0 20px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0;
-    padding-left: 110px;
   }
 }
 
 .example__title {
-  font-family: $secondary-font;
-  font-size: 36px;
-  line-height: 40px;
-  margin: 0;
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {

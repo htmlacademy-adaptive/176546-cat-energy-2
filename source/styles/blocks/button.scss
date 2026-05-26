@@ -37,6 +37,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
     color: $calm-color;
   }
 
@@ -61,16 +63,39 @@
   content: "";
   left: 0;
   right: 0;
-  bottom: 11px;
+  bottom: 15px;
   height: 2px;
   background-color: $accent-color-primary;
 
   @media (min-width: $desktop-width) {
+    bottom: 11px;
     background-color: $second-color-title;
   }
 }
 
-.button--secondary--active::before {
+.button--secondary-catalog {
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      display: none;
+      content: "";
+      left: 0;
+      right: 0;
+      bottom: 17px;
+      height: 2px;
+      background-color: $accent-color-primary;
+    }
+  }
+
+
+
+  @media (min-width: $tablet-width) {
+    color: $calm-color;
+  }
+}
+
+.button--secondary-active::before {
   display: block;
 }
 

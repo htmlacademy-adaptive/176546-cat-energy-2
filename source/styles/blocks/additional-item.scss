@@ -10,16 +10,17 @@
   letter-spacing: 0;
   color: $second-color-description;
   text-transform: uppercase;
+  margin: 13px 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
     display: inline-flex;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
-    font-size: 20px;
-    line-height: 20px;
   }
 }
 
@@ -29,5 +30,10 @@
     justify-content: space-between;
     width: 100%;
     margin-bottom: 25px;
+    align-items: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }

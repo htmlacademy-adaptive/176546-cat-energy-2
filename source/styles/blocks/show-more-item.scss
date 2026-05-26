@@ -1,11 +1,29 @@
 .show-more-item {
+  position: relative;
   text-align: center;
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 80px;
+    padding-bottom: 25px;
+  }
 
   @media (min-width: $tablet-width) {
     margin-top: 75px;
     align-content: end;
     padding: 0 37px 40px 37px;
     border: 1px solid $basic-grey;
+  }
+
+  &::after {
+    @media (max-width: $mobile-width-only) {
+      position: absolute;
+      content: "";
+      left: -20px;
+      right: -20px;
+      bottom: 0;
+      height: 1px;
+      background-color: $special-grey-fifth;
+    }
   }
 }
 
@@ -45,7 +63,11 @@
   @media (min-width: $tablet-width) {
     width: 60px;
     height: 60px;
-    bottom: 100%;
+    bottom: 140%;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 127%;
   }
 }
 
@@ -63,5 +85,9 @@
     font-size: 16px;
     line-height: 18px;
     max-width: 175px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 88px;
   }
 }

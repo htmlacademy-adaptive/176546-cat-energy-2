@@ -1,4 +1,6 @@
-.main-header {  &:before {
+.main-header {
+
+  &:before {
   @media (min-width: $desktop-width) {
     position: absolute;
     content: "";
@@ -15,6 +17,10 @@
     background-repeat: no-repeat;
     }
   }
+
+  &--catalog:before {
+    display: none;
+  }
 }
 
 .main-header__container {
@@ -27,11 +33,11 @@
   @media (min-width: $tablet-width) {
     justify-content: start;
     align-items: center;
-    margin: 20px 0 56px 0;
+    margin: 20px 0 53px 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 55px auto 23px auto;
+    margin: 55px auto 66px auto;
     justify-content: space-between;
     position: relative;
   }
