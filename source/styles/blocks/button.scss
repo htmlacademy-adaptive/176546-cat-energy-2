@@ -86,6 +86,10 @@
       height: 2px;
       background-color: $accent-color-primary;
     }
+
+    @media (min-width: $desktop-width) {
+      bottom: 10px;
+    }
   }
 
 
