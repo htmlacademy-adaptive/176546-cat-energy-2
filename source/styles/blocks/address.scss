@@ -72,23 +72,16 @@
 
 .address__image {
   position: relative;
-  display: flex;
   justify-content: center;
   background-color: $basic-grey;
-
-  @media (max-width: $mobile-width-only) {
-    display: none;
-  }
+  display: none;
 }
 
 .address__map {
   border: none;
   display: block;
   width: 100%;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
+  height: 362px;
 }
 
 .address__description {
