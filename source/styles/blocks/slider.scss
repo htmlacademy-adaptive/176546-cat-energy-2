@@ -35,51 +35,33 @@
   transform: translate(-50%, -50%);
   cursor: pointer;
   z-index: 3;
+  color: $active-color;
 
-  &:hover .slider__thumb rect{
-    stroke: $accent-color-primary;
-  }
+  &:hover {
+    color: $accent-color-primary;
 
-  &:hover .slider__thumb path {
-    fill: $accent-color-primary;
-  }
-
-  &:active .slider__thumb rect{
-    stroke: $basic-green-opacity;
-  }
-
-  &:active .slider__thumb path {
-    fill: $basic-green-opacity;
-  }
-
-  &::before {
-    position: absolute;
-    content: '';
-    width: 4px;
-    height: 256px;
-    top: -171%;
-    left: 45%;
-    background-color: $special-grey-second;
-    z-index: -1;
-
-    @media (max-width: $mobile-width-only) {
-      top: -272%;
-      left: 45%;
-    }
-
-    @media (min-width: $tablet-width) {
-      height: 512px;
-      top: -589%;
-      left: 48%;
-      background-color: $special-grey-second;
+    + .slider__scale {
+      background-color: $accent-color-primary;
     }
   }
 
-  &:hover::before {
-    background-color: $accent-color-primary;
-  }
+  &:active {
+    color: $basic-green-opacity;
 
-  &:active::before {
-    background-color: $basic-green-opacity;
+    + .slider__scale {
+      background-color: $basic-green-opacity;
+    }
   }
+}
+
+.slider__scale {
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $special-grey-second;
+  z-index: 2;
+  border-radius: 2px;
 }

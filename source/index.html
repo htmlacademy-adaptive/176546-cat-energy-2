@@ -120,10 +120,13 @@
             </picture>
             <button class="slider__button button-reset" type="button">
               <span class="visually-hidden">Перемещение ползунка</span>
-              <svg class="slider__thumb" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="38" height="38" rx="19" fill="#fff"/><rect x="1" y="1" width="38" height="38" rx="19" stroke="#666" stroke-width="2"/>
-                <path d="m16 11-8 9 8 9v-18Zm16 9-8-9v18l8-9Z" fill="#666"/>
+              <svg class="slider__thumb" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1" y="1" width="38" height="38" rx="19" fill="#fff"/>
+                <rect x="1" y="1" width="38" height="38" rx="19" stroke="currentColor" stroke-width="2"/>
+                <path d="m16 11-8 9 8 9v-18Zm16 9-8-9v18l8-9Z" fill="currentColor"/>
               </svg>
             </button>
+            <div class="slider__scale"></div>
             <picture>
               <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="./images/slider-after@1x.png 1x, ./images/slider-after@2x.png 2x">
               <img class="slider__after" src="./images/slider-after-mobile@1x.png" srcset="./images/slider-after-mobile@2x.png 2x" width="280" height="256" alt="Сравнение кота на питании после">

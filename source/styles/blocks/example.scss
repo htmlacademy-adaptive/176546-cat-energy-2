@@ -1,4 +1,6 @@
 .example {
+  background-color: $basic-grey;
+
   @media (min-width: $tablet-width) {
     padding-top: 17px;
     padding-bottom: 0;
