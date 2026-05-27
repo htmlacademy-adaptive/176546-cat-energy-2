@@ -1,6 +1,6 @@
 .additional {
   position: relative;
-  margin-bottom: 78px;
+  margin-bottom: 80px;
 }
 
 .additional__container-title {
@@ -23,10 +23,18 @@
     content: "";
     width: 100%;
     left: 0;
-    top: 42px;
     height: 2px;
     background-color: $accent-color-primary;
     z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      top: 15px;
+
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 42px;
+    }
   }
 }
 
@@ -35,7 +43,6 @@
   font-size: 24px;
   line-height: 24px;
   letter-spacing: 0;
-  z-index: 1;
   background-color: $second-color-title;
 
   @media (max-width: $mobile-width-only) {
@@ -43,10 +50,11 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-left: 30px;
     font-size: 32px;
     line-height: 32px;
-    padding-left: 40px;
-    padding-bottom: 80px;
+    padding: 0 40px 80px;
+    display: inline-flex;
   }
 
   @media (min-width: $desktop-width) {
@@ -54,7 +62,6 @@
     margin-left: 73px;
     font-size: 40px;
     line-height: 40px;
-    background-color: $second-color-title;
     display: inline-flex;
   }
 
