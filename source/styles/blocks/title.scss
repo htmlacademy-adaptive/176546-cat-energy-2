@@ -21,20 +21,20 @@
       transform: translateY(-50%);
       z-index: -1;
     }
+  }
+}
 
-    .container__title {
-      padding: 0 40px 0 20px;
-      margin-left: -20px;
-      background-color: $second-color-title;
+.title--line .container__title {
+  padding: 0 40px 0 20px;
+  margin-left: -20px;
+  background-color: $second-color-title;
 
-      @media (min-width: $tablet-width) {
-        padding: 0 40px;
-        margin-left: 0;
-      }
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+    margin-left: 0;
+  }
 
-      @media (min-width: $desktop-width) {
-        margin-left: -40px;
-      }
-    }
+  @media (min-width: $desktop-width) {
+    margin-left: -40px;
   }
 }
