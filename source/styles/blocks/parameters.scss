@@ -22,11 +22,11 @@
     }
   }
 
-    &--time {
-    padding: 15px 20px 18px;
+  &--time {
+  padding: 15px 20px 18px;
 
-      @media (min-width: $tablet-width) {
-        padding: 14px 30px 20px;
+    @media (min-width: $tablet-width) {
+      padding: 14px 30px 20px;
     }
   }
 }

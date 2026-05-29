@@ -6,9 +6,9 @@
     padding-bottom: 0;
     background-image:
       linear-gradient(
-          to top,
-          $background-grey 462px,
-          $second-color-title 462px
+        to top,
+        $background-grey 462px,
+        $second-color-title 462px
       );
   }
 
@@ -16,9 +16,9 @@
     padding: 0;
     background-image:
       linear-gradient(
-          to bottom,
-          $second-color-title 180px,
-          $background-grey 180px
+        to bottom,
+        $second-color-title 180px,
+        $background-grey 180px
       );
   }
 }
