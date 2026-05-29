@@ -5,33 +5,33 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 17px;
-    padding-bottom: 54px
+    padding-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 56px;
-    padding-bottom: 66px
+    padding-bottom: 66px;
   }
 
-  &:before {
-  @media (min-width: $desktop-width) {
-    position: absolute;
-    content: "";
-    width: 50%;
-    height: 803px;
-    right: 0;
-    z-index: -1;
-    top: -55px;
-    background-image:
-      linear-gradient(to bottom, $accent-color-primary-opacity 749px, transparent 749px),
-      url("../../images/index-background-desktop@1x.jpg"),
-      linear-gradient(to bottom, $accent-color-secondary 749px, transparent 749px);
-    background-position: right;
-    background-repeat: no-repeat;
+  &::before {
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      content: "";
+      width: 50%;
+      height: 803px;
+      right: 0;
+      z-index: -1;
+      top: -55px;
+      background-image:
+        linear-gradient(to bottom, $accent-color-primary-opacity 749px, transparent 749px),
+        url("../../images/index-background-desktop@1x.jpg"),
+        linear-gradient(to bottom, $accent-color-secondary 749px, transparent 749px);
+      background-position: right;
+      background-repeat: no-repeat;
+      }
     }
-  }
 
-  &--catalog:before {
+  &--catalog::before {
     display: none;
   }
 }
@@ -73,7 +73,6 @@
 }
 
 .main-header__logo--primary {
-
   &:hover,
   &:focus {
     opacity: 0.7;
