@@ -11,70 +11,21 @@
   }
 }
 
-.promotions__container-title {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
-.promotions__scale {
-  &::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    left: 0;
-    height: 2px;
-    background-color: $accent-color-primary;
-
-    @media (max-width: $mobile-width-only) {
-      top: 9px;
-    }
-
-    @media (min-width: $tablet-width) {
-      top: 15px;
-      z-index: -1;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 39px;
-      z-index: -1;
-    }
-  }
-}
-
 .promotions__title {
-  position: relative;
-  margin: 0;
-  font-family: $secondary-font;
   font-size: 24px;
-  font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0;
   margin-bottom: 32px;
-  background-color: $second-color-title;
-
-  @media (max-width: $mobile-width-only) {
-    padding-left: 20px;
-    padding-right: 40px;
-    display: inline-flex;
-  }
 
   @media (min-width: $tablet-width) {
-    margin-left: 30px;
     font-size: 32px;
     line-height: 32px;
-    padding-left: 40px;
-    padding-right: 40px;
     margin-bottom: 66px;
-    display: inline-flex;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 21px 40px 71px;
-    margin-left: 73px;
     font-size: 40px;
     line-height: 40px;
-    margin-bottom: 0;
-    display: inline-flex;
+    margin-bottom: 72px;
   }
 }
 
