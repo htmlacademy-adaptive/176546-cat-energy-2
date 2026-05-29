@@ -1,12 +1,12 @@
 .example {
-  background-color: $basic-grey;
+  background-color: $background-grey;
 
   @media (min-width: $tablet-width) {
     padding-top: 17px;
     padding-bottom: 0;
     background-image: linear-gradient(
         to top,
-        $basic-grey 462px,
+        $background-grey 462px,
         $second-color-title 462px
     );
   }
@@ -16,7 +16,7 @@
     background-image: linear-gradient(
         to bottom,
         $second-color-title 180px,
-        $basic-grey 180px
+        $background-grey 180px
     );
   }
 }
@@ -24,11 +24,6 @@
 .example__container {
   padding-top: 25px;
   padding-bottom: 36px;
-
-  //@media (min-width: $tablet-width) {
-  //  padding-top: 45px;
-  //  padding-bottom: 0;
-  //}
 
   @media (min-width: $desktop-width) {
     padding-top: 40px;

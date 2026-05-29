@@ -61,24 +61,24 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $basic-grey;
+    background-color: $background-grey;
   }
 
   &--loss {
-    white-space: nowrap;
+    padding: 0 8px;
 
     @media (min-width: $tablet-width) {
-      padding: 0 8px;
       transform: translate(-50%, -70%);
+      white-space: nowrap;
     }
   }
 
   &--time {
-    white-space: nowrap;
+    padding: 0 8px;
 
     @media (min-width: $tablet-width) {
-      padding: 0 8px;
       transform: translate(-50%, -70%);
+      white-space: nowrap;
     }
   }
 }

@@ -1,4 +1,17 @@
 .main-header {
+  padding-top: 13px;
+  padding-bottom: 11px;
+
+
+  @media (min-width: $tablet-width) {
+    padding-top: 17px;
+    padding-bottom: 54px
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 56px;
+    padding-bottom: 66px
+  }
 
   &:before {
   @media (min-width: $desktop-width) {
@@ -27,17 +40,17 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin-top: 13px;
-  margin-bottom: 11px;
+  //margin-top: 13px;
+  //margin-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     justify-content: start;
     align-items: center;
-    margin: 20px 0 53px 0;
+    //margin: 20px 0 48px 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 55px auto 66px auto;
+    //margin: 55px auto 66px auto;
     justify-content: space-between;
     position: relative;
   }

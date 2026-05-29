@@ -44,7 +44,7 @@
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
-    line-height: 24px;
+    line-height: 20px;
     color: $second-color-title;
   }
 
@@ -67,8 +67,12 @@
   height: 2px;
   background-color: $accent-color-primary;
 
+  @media (min-width: $tablet-width) {
+    bottom: 12px;
+  }
+
   @media (min-width: $desktop-width) {
-    bottom: 11px;
+    bottom: 7px;
     background-color: $second-color-title;
   }
 }
@@ -82,13 +86,13 @@
       content: "";
       left: 0;
       right: 0;
-      bottom: 17px;
+      bottom: 15px;
       height: 2px;
       background-color: $accent-color-primary;
     }
 
     @media (min-width: $desktop-width) {
-      bottom: 10px;
+      bottom: 7px;
     }
   }
 
@@ -100,7 +104,9 @@
 }
 
 .button--secondary-active::before {
-  display: block;
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .button--transparent {

@@ -1,5 +1,5 @@
 .advantages {
-  padding-bottom: 47px;
+  padding-bottom: 51px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 58px;
@@ -8,8 +8,7 @@
 
   @media (min-width: $desktop-width) {
     border: none;
-    padding-bottom: 0;
-    margin-bottom: 38px;
+    padding-bottom: 38px;
   }
 }
 
@@ -17,13 +16,13 @@
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 40px;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
   letter-spacing: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 75px;
+    padding-bottom: 75px;
   }
 }
 

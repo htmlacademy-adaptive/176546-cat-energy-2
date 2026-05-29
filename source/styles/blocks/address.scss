@@ -1,4 +1,5 @@
 .address {
+  position: relative;
   @media (min-width: $desktop-width) {
     background-color: $basic-grey;
   }
@@ -82,6 +83,10 @@
   display: block;
   width: 100%;
   height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
 
 .address__description {

@@ -38,4 +38,8 @@
     display: flex;
     justify-content: end;
   }
+
+  @media (min-width: $desktop-width) {
+    justify-content: start;
+  }
 }

@@ -1,12 +1,12 @@
 .catalog {
-  margin-bottom: 25px;
+  padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 49px;
+    padding-bottom: 73px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 0;
+    padding-bottom: 48px;
   }
 }
 
@@ -19,9 +19,25 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
-    padding-bottom: 84px;
+    padding-bottom: 83px;
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 87px;
+  }
+
+  &::before {
+    @media (max-width: $mobile-width-only) {
+      position: absolute;
+      content: "";
+      left: -20px;
+      right: -20px;
+      top: 0;
+      height: 1px;
+      background-color: $special-grey-fifth;
+    }
   }
 
   &::after {
@@ -46,7 +62,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 71px 80px;
+    gap: 75px 80px;
   }
 }
 
