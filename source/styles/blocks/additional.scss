@@ -69,9 +69,9 @@
   }
 }
 
-.additional__present:before {
+.additional__present::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 78px;
   height: 80px;
   top: 34%;
@@ -117,7 +117,6 @@
 }
 
 .additional__item {
-
   @media (max-width: $mobile-width-only) {
     padding-bottom: 18px;
     border-bottom: 1px solid $parameters-title-border-bolor;

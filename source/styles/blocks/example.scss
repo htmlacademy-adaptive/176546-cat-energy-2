@@ -4,20 +4,22 @@
   @media (min-width: $tablet-width) {
     padding-top: 17px;
     padding-bottom: 0;
-    background-image: linear-gradient(
-        to top,
-        $background-grey 462px,
-        $second-color-title 462px
-    );
+    background-image:
+      linear-gradient(
+          to top,
+          $background-grey 462px,
+          $second-color-title 462px
+      );
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    background-image: linear-gradient(
-        to bottom,
-        $second-color-title 180px,
-        $background-grey 180px
-    );
+    background-image:
+      linear-gradient(
+          to bottom,
+          $second-color-title 180px,
+          $background-grey 180px
+      );
   }
 }
 

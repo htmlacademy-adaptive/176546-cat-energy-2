@@ -10,7 +10,7 @@
   @media (min-width: $tablet-width) {
     margin-top: 75px;
     align-content: end;
-    padding: 0 37px 40px 37px;
+    padding: 0 37px 40px;
     border: 1px solid $basic-grey;
   }
 
@@ -44,9 +44,9 @@
   }
 }
 
-.show-more-item__title:before {
+.show-more-item__title::before {
   position: absolute;
-  content: '';
+  content: "";
   left: 50%;
   transform: translate(-50%, -50%);
   background-image: url("../../icons/stack.svg#plus");

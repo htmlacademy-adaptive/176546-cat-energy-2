@@ -78,7 +78,6 @@
 }
 
 .button--secondary-catalog {
-
   &::before {
     @media (min-width: $tablet-width) {
       position: absolute;
@@ -95,8 +94,6 @@
       bottom: 7px;
     }
   }
-
-
 
   @media (min-width: $tablet-width) {
     color: $calm-color;
