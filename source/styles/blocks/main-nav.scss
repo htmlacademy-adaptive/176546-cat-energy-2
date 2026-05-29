@@ -14,6 +14,20 @@
   }
 }
 
+.main-nav--nojs {
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+
+    .main-nav__toggle {
+      display: none;
+    }
+
+    .main-nav__list {
+      display: block;
+    }
+  }
+}
+
 .main-nav__toggle {
   background: none;
   width: 24px;

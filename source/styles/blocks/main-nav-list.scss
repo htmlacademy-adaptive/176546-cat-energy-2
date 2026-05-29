@@ -15,7 +15,8 @@
     }
 
     &--nojs {
-      display: block;
+      position: static;
+      padding: 0;
     }
 
     &:last-child {
