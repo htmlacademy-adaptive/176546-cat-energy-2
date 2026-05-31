@@ -1,9 +1,20 @@
 .social {
-  margin: 0;
+  margin: 0 0 18px;
   padding: 20px 0;
   display: flex;
   justify-content: center;
   gap: 24px;
+
+  @media (max-width: $mobile-width-only) {
+    border-top: 1px solid $border-color-transparent;
+    border-bottom: 1px solid $border-color-transparent;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 22px 0;
+    transform: translateX(18px);
+  }
 }
 
 .social__link {

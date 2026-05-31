@@ -1,10 +1,17 @@
 .catalog {
+  padding-bottom: 25px;
+
   @media (min-width: $tablet-width) {
+    padding-bottom: 73px;
+  }
+
+  @media (min-width: $desktop-width) {
     padding-bottom: 74px;
   }
 }
 
 .catalog__title {
+  position: relative;
   line-height: 36px;
   padding-top: 27px;
   padding-bottom: 41px;
@@ -12,9 +19,37 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
-    padding-bottom: 84px;
+    padding-bottom: 83px;
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 87px;
+  }
+
+  &::before {
+    @media (max-width: $mobile-width-only) {
+      position: absolute;
+      content: "";
+      left: -20px;
+      right: -20px;
+      top: 0;
+      height: 1px;
+      background-color: $special-grey-fifth;
+    }
+  }
+
+  &::after {
+    @media (max-width: $mobile-width-only) {
+      position: absolute;
+      content: "";
+      left: -20px;
+      right: -20px;
+      bottom: 0;
+      height: 1px;
+      background-color: $special-grey-fifth;
+    }
   }
 }
 
@@ -22,11 +57,20 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    gap: 67px 60px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 80px;
+    gap: 75px 80px;
+  }
+}
+
+.catalog__button {
+  margin-top: 17px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 24px;
   }
 }

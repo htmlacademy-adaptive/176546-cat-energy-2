@@ -1,49 +1,145 @@
 .main-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 14px 0;
+  padding-top: 13px;
+  padding-bottom: 11px;
+
 
   @media (min-width: $tablet-width) {
-    justify-content: start;
-    margin: 25px 0 65px 0;
+    padding-top: 17px;
+    padding-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 55px auto 29px auto;
-    justify-content: space-between;
+    padding-top: 56px;
+    padding-bottom: 66px;
+  }
+}
 
+.main-header::before {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 803px;
+    right: 0;
+    z-index: -1;
+    top: -55px;
+    display: none;
+    background-image:
+      linear-gradient(to bottom, $accent-color-primary-opacity $promo-image-height, transparent $promo-image-height),
+      url("../../images/index-background-desktop@1x.jpg"),
+      linear-gradient(to bottom, $accent-color-secondary $promo-image-height, transparent $promo-image-height);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: auto $promo-image-height;
+
+    @supports (background-image: url("../../images/index-background-desktop@1x.webp")) {
+      background-image:
+        linear-gradient(to bottom, $accent-color-primary-opacity $promo-image-height, transparent $promo-image-height),
+        url("../../images/index-background-desktop@1x.webp"),
+        linear-gradient(to bottom, $accent-color-secondary $promo-image-height, transparent $promo-image-height);
+    }
+  }
+
+  @media (min-width: $desktop-width) and (min-resolution: 2dppx) {
+    background-size: auto $promo-image-height;
+
+    background-image:
+      linear-gradient(to bottom, $accent-color-primary-opacity $promo-image-height, transparent $promo-image-height),
+      url("../../images/index-background-desktop@2x.jpg"),
+      linear-gradient(to bottom, $accent-color-secondary $promo-image-height, transparent $promo-image-height);
+
+    @supports (background-image: url("../../images/index-background-desktop@2x.webp")) {
+      background-image:
+        linear-gradient(to bottom, $accent-color-primary-opacity $promo-image-height, transparent $promo-image-height),
+        url("../../images/index-background-desktop@2x.webp"),
+        linear-gradient(to bottom, $accent-color-secondary $promo-image-height, transparent $promo-image-height);
+    }
+  }
+}
+
+.main-header--show-promo::before {
+  display: block;
+}
+
+.main-header--nojs {
+  @media (max-width: $mobile-width-only) {
+    padding-bottom: 0;
+
+    .main-header__container {
+      flex-wrap: wrap;
+    }
+
+    .main-header__logo--primary {
+      padding-left: 20px;
+      padding-bottom: 11px;
+    }
+
+    .main-header__logo--secondary {
+      top: 21px;
+    }
+  }
+}
+
+.main-header__container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    justify-content: start;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
     position: relative;
   }
 
-  &:before {
-    @media (min-width: $desktop-width) {
+  &--border::after {
+    @media (max-width: $mobile-width-only) {
       position: absolute;
       content: "";
-      width: 720px;
-      height: 694px;
+      left: 0;
       right: 0;
-      z-index: -1;
-      top: -55px;
-      background-image:
-        linear-gradient(to bottom, $accent-color-primary-opacity 694px, transparent 694px),
-        url("../../images/index-background-desktop@1x.jpg");
-    }
-
-    @media (min-width: $desktop-width) {
-      background-image: none;
+      bottom: -11px;
+      height: 1px;
+      background-color: $special-grey-fifth;
     }
   }
 }
 
 .main-header__logo {
-  display: block;
+  display: flex;
+  align-items: center;
   mask-position: center;
   mask-repeat: no-repeat;
   transition: background-color 0.3s;
 }
 
 .main-header__logo--primary {
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 18px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 14px;
+  }
+}
+
+.main-header__logo--secondary {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 
   &:hover,
   &:focus {
@@ -55,37 +151,18 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-right: 16px;
+    transform: translate(0, 0);
+    position: static;
+    margin-left: 13px;
+
+    width: 101px;
+    height: 18px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 14px;
-  }
-}
-
-.main-header__logo--secondary {
-  width: 101px;
-  height: 18px;
-  background-color: $calm-color;
-  mask-image: url("../../images/main-header__logo-secodary.svg");
-  margin: 0 auto;
-
-  &:hover,
-  &:focus {
-    background-color: $hover-color;
-  }
-
-  &:active {
-    background-color: $active-color;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0;
+    margin-left: 14px;
     width: 118px;
     height: 21px;
+    transform: translateY(-3px);
   }
 }

@@ -1,9 +1,13 @@
 $base-color-description: #444444;
 $base-color-title: #000000;
 $second-color-title: #ffffff;
+$second-color-title-opacity: rgba(255, 255, 255, 0.3);
 $border-color-button-secondary: #e6e6e6;
 $accent-color-primary: #68b738;
 $accent-color-primary-opacity: rgba(104, 183, 56, 0.85);
+$basic-green: #5eaa2f;
+$basic-green-opacity: #9ecc82;
+$accent-color-secondary: #504f54;
 $basic-grey: #f2f2f2;
 $border-color-transparent: #d9d9d9;
 $background-grey: #eaeaea;
@@ -14,6 +18,9 @@ $hover-color: #3e3e3e;
 $calm-color: #111111;
 $active-color: #6b6b6b;
 $special-grey-third: #d3d3d3;
+$special-grey-fifth: #ebebeb;
+$input-calm: #e7e7e7;
+$input-error: #ff8282;
 
 $primary-font: "Lato", sans-serif;
 $secondary-font: "Oswald", sans-serif;
@@ -21,3 +28,5 @@ $secondary-font: "Oswald", sans-serif;
 $tablet-width: 768px;
 $desktop-width: 1440px;
 $mobile-width-only: 767px;
+
+$promo-image-height: 694px;

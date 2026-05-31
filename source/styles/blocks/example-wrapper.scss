@@ -1,12 +1,14 @@
-.example-description__wrapper {
+.example-wrapper__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 99px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
     align-items: start;
+    margin-bottom: 0;
   }
 }

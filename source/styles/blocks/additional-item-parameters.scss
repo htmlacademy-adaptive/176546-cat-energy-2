@@ -8,12 +8,12 @@
     display: inline-flex;
     margin: 0;
     margin-left: auto;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    font-size: 16px;
-    line-height: 20px;
     min-width: 285px;
     margin-right: 40px;
   }
@@ -21,8 +21,25 @@
 
 .additional-item-parameters__key {
   margin-right: 49px;
+  letter-spacing: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 52px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-right: 0;
+  }
+}
+
+.additional-item-parameters__value {
+  @media (min-width: $tablet-width) {
+    min-width: 42px;
+    display: flex;
+    justify-content: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: start;
   }
 }

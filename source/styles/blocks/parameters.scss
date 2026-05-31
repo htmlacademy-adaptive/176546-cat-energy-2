@@ -8,19 +8,25 @@
   text-transform: uppercase;
   color: $base-color-title;
 
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0;
+  }
+
   &--loss {
-    padding: 15px 39px 18px;
+    padding: 14px 38px 20px 41px;
 
     @media (min-width: $tablet-width) {
-      padding: 15px 57px 20px;
+      padding: 14px 56px 20px;
     }
   }
 
-    &--time {
+  &--time {
     padding: 15px 20px 18px;
 
-      @media (min-width: $tablet-width) {
-        padding: 15px 30px 20px;
+    @media (min-width: $tablet-width) {
+      padding: 14px 30px 20px;
     }
   }
 }
@@ -33,15 +39,12 @@
     font-size: 30px;
     line-height: 37px;
   }
-
-  @media (min-width: $desktop-width) {
-
-  }
 }
 
 .parameters__description {
   position: absolute;
   text-align: center;
+  letter-spacing: 0;
 
   background-color: $background-grey;
 
@@ -54,23 +57,28 @@
 
   @media (min-width: $tablet-width) {
     background-color: $second-color-title;
+    font-size: 14px;
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $basic-grey;
+    background-color: $background-grey;
   }
 
   &--loss {
+    padding: 0 8px;
+
     @media (min-width: $tablet-width) {
-      min-width: 96px;
       transform: translate(-50%, -70%);
+      white-space: nowrap;
     }
   }
 
   &--time {
+    padding: 0 8px;
+
     @media (min-width: $tablet-width) {
-      min-width: 125px;
       transform: translate(-50%, -70%);
+      white-space: nowrap;
     }
   }
 }

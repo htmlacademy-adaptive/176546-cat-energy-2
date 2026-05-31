@@ -13,28 +13,108 @@
   color: $second-color-title;
   background-color: $accent-color-primary;
   padding: 10px 0;
+
+  &:hover,
+  &:active {
+    background-color: $basic-green;
+  }
+
+  &:active {
+    color: $second-color-title-opacity;
+  }
 }
 
 .button--secondary {
+  position: relative;
   padding-top: 22px;
-  padding-bottom: 24px;
-  //border-top: 1px solid $border-color-button-secondary;
+  padding-bottom: 22px;
 
-  @media (min-width: $desktop-width) {
+  @media (max-width: $mobile-width-only) {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0;
+    display: inline-flex;
+  }
+
+  @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
-    color: $second-color-title;
+    color: $calm-color;
   }
 
   @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $second-color-title;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.button--secondary::before {
+  position: absolute;
+  display: none;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 15px;
+  height: 2px;
+  background-color: $accent-color-primary;
+
+  @media (min-width: $tablet-width) {
+    bottom: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 7px;
+    background-color: $second-color-title;
+  }
+}
+
+.button--secondary-catalog {
+  &::before {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      display: none;
+      content: "";
+      left: 0;
+      right: 0;
+      bottom: 15px;
+      height: 2px;
+      background-color: $accent-color-primary;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: 7px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
     color: $calm-color;
   }
 }
 
+.button--secondary-active::before {
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
 .button--transparent {
-  display: flex;
+  display: inline-flex;
   justify-content: left;
   align-items: center;
+  letter-spacing: 0;
+
+  @media (min-width: $tablet-width) {
+    max-width: 170px;
+  }
 
   &::after {
     flex-shrink: 0;
@@ -45,6 +125,10 @@
     background-repeat: no-repeat;
     background-position: center;
     margin-left: 15px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 27px;
+    }
   }
 
   &:hover::after,

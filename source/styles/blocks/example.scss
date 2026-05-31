@@ -1,48 +1,48 @@
 .example {
   background-color: $background-grey;
-  padding-top: 25px;
-  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    background-color: $second-color-title;
+    padding-top: 17px;
     padding-bottom: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    min-height: 598px;
     background-image:
-      linear-gradient(to bottom, $second-color-title 164px, $basic-grey 164px, $basic-grey 100%);
-    max-width: 1440px;
-    margin:0 auto
-
-  }
-}
-
-.example__wrapper {
-  padding: 0 20px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0 30px;
+      linear-gradient(
+        to top,
+        $background-grey 462px,
+        $second-color-title 462px
+      );
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    padding-left: 110px;
+    background-image:
+      linear-gradient(
+        to bottom,
+        $second-color-title 180px,
+        $background-grey 180px
+      );
+  }
+}
+
+.example__container {
+  padding-top: 25px;
+  padding-bottom: 36px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 40px;
+    padding-bottom: 19px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 598px;
   }
 }
 
 .example__title {
-  font-family: $secondary-font;
-  font-size: 36px;
-  line-height: 40px;
-  margin: 0;
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -58,6 +58,7 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 20px;
+  letter-spacing: 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -75,7 +76,13 @@
 }
 
 .example__price span {
+  @media (min-width: $tablet-width) {
+    margin-top: 10px;
+    margin-left: 64px;
+  }
+
   @media (min-width: $desktop-width) {
+    margin-top: 0;
     margin-left: 64px;
   }
 }
@@ -85,29 +92,33 @@
   justify-content: space-between;
   align-items: center;
   gap: 32px;
-  margin: 20px 0;
+  margin-top: 20px;
+  margin-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     display: inline-flex;
-    gap: 43px;
+    gap: 42px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    margin-bottom: 55px;
+    margin-bottom: 61px;
   }
 }
 
 .example__description {
   margin: 0;
+  letter-spacing: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 436px;
+    max-width: 432px;
     margin-bottom: 69px;
   }
 }
