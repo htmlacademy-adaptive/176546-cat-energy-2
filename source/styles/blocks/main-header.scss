@@ -24,16 +24,18 @@
     z-index: -1;
     top: -55px;
     display: none;
-    background-image: linear-gradient(to bottom, $accent-color-primary-opacity 749px, transparent 749px),
-    url("../../images/index-background-desktop@1x.jpg"),
-    linear-gradient(to bottom, $accent-color-secondary 749px, transparent 749px);
+    background-image:
+      linear-gradient(to bottom, $accent-color-primary-opacity 749px, transparent 749px),
+      url("../../images/index-background-desktop@1x.jpg"),
+      linear-gradient(to bottom, $accent-color-secondary 749px, transparent 749px);
     background-position: right;
     background-repeat: no-repeat;
 
     @supports (background-image: url("../../images/index-background-desktop@1x.webp")) {
-      background-image: linear-gradient(to bottom, $accent-color-primary-opacity 749px, transparent 749px),
-      url("../../images/index-background-desktop@1x.webp"),
-      linear-gradient(to bottom, $accent-color-secondary 749px, transparent 749px);
+      background-image:
+        linear-gradient(to bottom, $accent-color-primary-opacity 749px, transparent 749px),
+        url("../../images/index-background-desktop@1x.webp"),
+        linear-gradient(to bottom, $accent-color-secondary 749px, transparent 749px);
     }
   }
 
