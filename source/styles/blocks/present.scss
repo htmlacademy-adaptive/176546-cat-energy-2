@@ -1,0 +1,20 @@
+.present__description {
+  margin: 0;
+  color: $second-color-title;
+  padding: 43px 61px 43px 58px;
+  letter-spacing: 0;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 305px;
+    text-align: start;
+    padding: 0 111px 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    padding: 0 42px;
+    margin-bottom: 43px;
+  }
+}

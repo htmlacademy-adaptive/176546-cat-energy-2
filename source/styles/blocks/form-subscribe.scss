@@ -1,0 +1,34 @@
+.form-subscribe {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    max-width: 632px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 752px;
+    margin: 0 auto;
+  }
+}
+
+.form-subscribe__email {
+  margin-bottom: 15px;
+  border: 1px solid $parameters-title-border-bolor;
+  padding: 13px;
+  width: 100%;
+  font-family: $secondary-font;
+  font-size: 20px;
+  color: $base-color-description;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    min-width: 376px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    flex-grow: 2;
+    min-width: 496px;
+  }
+}

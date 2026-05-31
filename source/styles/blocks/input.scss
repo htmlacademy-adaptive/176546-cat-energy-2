@@ -1,0 +1,16 @@
+.input {
+  border: none;
+  outline: 1px solid $input-calm;
+
+  &:hover {
+    outline: 1px solid $parameters-title-border-bolor;
+  }
+
+  &:focus {
+    outline: 2px solid $base-color-description;
+  }
+
+  &--error {
+    outline: 2px solid $input-error;
+  }
+}

@@ -1,0 +1,41 @@
+.copyright__link {
+  display: block;
+  color: $special-grey-second;
+
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0;
+
+  mask-position: center;
+  mask-repeat: no-repeat;
+  transition: background-color 0.3s;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $accent-color-primary;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__link--title {
+  @media (min-width: $tablet-width) {
+    margin-right: 23px;
+  }
+}
+
+.copyright__link--image {
+  width: 27px;
+  height: 34px;
+  mask-image: url("../../icons/stack.svg#logo-academy");
+  background-color: $special-grey-second;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $accent-color-primary;
+  }
+}

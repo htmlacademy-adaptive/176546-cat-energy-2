@@ -1,7 +1,38 @@
 /* GLOBAL */
 @import "./common/variables.scss";
-@import "./common/global.scss";
+@import "./common/mixins.scss";
 @import "./common/fonts.scss";
+@import "./common/global.scss";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+@import "./blocks/title.scss";
+@import "./blocks/container.scss";
+@import "./blocks/visually-hidden.scss";
+@import "./blocks/button.scss";
+@import "./blocks/button-reset.scss";
+@import "./blocks/input.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/main-nav-list.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/present.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/catalog-item.scss";
+@import "./blocks/example.scss";
+@import "blocks/example-wrapper";
+@import "./blocks/item-parameters.scss";
+@import "./blocks/parameters.scss";
+@import "./blocks/additional-item-parameters.scss";
+@import "./blocks/show-more-item.scss";
+@import "./blocks/additional.scss";
+@import "./blocks/additional-item.scss";
+@import "./blocks/promotions.scss";
+@import "./blocks/effects.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/address.scss";
+@import "./blocks/form-subscribe.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/footer-logo.scss";
+@import "./blocks/copyright.scss";

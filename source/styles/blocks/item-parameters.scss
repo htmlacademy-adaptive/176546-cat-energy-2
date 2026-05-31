@@ -1,0 +1,20 @@
+.item-parameters__wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $parameters-title-border-bolor;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 8px;
+    padding-bottom: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 5px;
+    padding-bottom: 8px;
+  }
+}

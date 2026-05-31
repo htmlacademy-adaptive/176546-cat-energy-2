@@ -1,0 +1,40 @@
+.title {
+  margin: 0;
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 40px;
+  color: $base-color-title;
+  font-weight: 400;
+  letter-spacing: 0;
+
+  &--line {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      right: 0;
+      top: 50%;
+      height: 2px;
+      background-color: $accent-color-primary;
+      transform: translateY(-50%);
+      z-index: -1;
+    }
+  }
+}
+
+.title--line .container__title {
+  padding: 0 40px 0 20px;
+  margin-left: -20px;
+  background-color: $second-color-title;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -40px;
+  }
+}

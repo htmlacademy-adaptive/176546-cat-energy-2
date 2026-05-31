@@ -1,0 +1,34 @@
+.main-footer {
+  @media (min-width: $desktop-width) {
+    background-color: $basic-grey;
+  }
+}
+
+.main-footer__container {
+  background-color: $basic-grey;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 53px;
+    padding-bottom: 50px;
+  }
+}
+
+.main-footer__logo {
+  display: flex;
+  justify-content: center;
+}
+
+
+.main-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,124 @@
+.example {
+  background-color: $background-grey;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 17px;
+    padding-bottom: 0;
+    background-image:
+      linear-gradient(
+        to top,
+        $background-grey 462px,
+        $second-color-title 462px
+      );
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    background-image:
+      linear-gradient(
+        to bottom,
+        $second-color-title 180px,
+        $background-grey 180px
+      );
+  }
+}
+
+.example__container {
+  padding-top: 25px;
+  padding-bottom: 36px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 40px;
+    padding-bottom: 19px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 598px;
+  }
+}
+
+.example__title {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 146px;
+  }
+}
+
+.example__price {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+  letter-spacing: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    max-width: 180px;
+    font-size: 20px;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 436px;
+    flex-direction: row;
+  }
+}
+
+.example__price span {
+  @media (min-width: $tablet-width) {
+    margin-top: 10px;
+    margin-left: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    margin-left: 64px;
+  }
+}
+
+.example__parameters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  margin-top: 20px;
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    display: inline-flex;
+    gap: 42px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-bottom: 61px;
+  }
+}
+
+.example__description {
+  margin: 0;
+  letter-spacing: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 432px;
+    margin-bottom: 69px;
+  }
+}
