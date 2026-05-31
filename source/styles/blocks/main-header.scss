@@ -25,33 +25,34 @@
     top: -55px;
     display: none;
     background-image:
-      linear-gradient(to bottom, $accent-color-primary-opacity 749px, transparent 749px),
+      linear-gradient(to bottom, $accent-color-primary-opacity $promo-image-height, transparent $promo-image-height),
       url("../../images/index-background-desktop@1x.jpg"),
-      linear-gradient(to bottom, $accent-color-secondary 749px, transparent 749px);
+      linear-gradient(to bottom, $accent-color-secondary $promo-image-height, transparent $promo-image-height);
     background-position: right;
     background-repeat: no-repeat;
+    background-size: auto $promo-image-height;
 
     @supports (background-image: url("../../images/index-background-desktop@1x.webp")) {
       background-image:
-        linear-gradient(to bottom, $accent-color-primary-opacity 749px, transparent 749px),
+        linear-gradient(to bottom, $accent-color-primary-opacity $promo-image-height, transparent $promo-image-height),
         url("../../images/index-background-desktop@1x.webp"),
-        linear-gradient(to bottom, $accent-color-secondary 749px, transparent 749px);
+        linear-gradient(to bottom, $accent-color-secondary $promo-image-height, transparent $promo-image-height);
     }
   }
 
   @media (min-width: $desktop-width) and (min-resolution: 2dppx) {
-    background-size: contain;
+    background-size: auto $promo-image-height;
 
     background-image:
-      linear-gradient(to bottom, $accent-color-primary-opacity 749px, transparent 749px),
+      linear-gradient(to bottom, $accent-color-primary-opacity $promo-image-height, transparent $promo-image-height),
       url("../../images/index-background-desktop@2x.jpg"),
-      linear-gradient(to bottom, $accent-color-secondary 749px, transparent 749px);
+      linear-gradient(to bottom, $accent-color-secondary $promo-image-height, transparent $promo-image-height);
 
     @supports (background-image: url("../../images/index-background-desktop@2x.webp")) {
       background-image:
-        linear-gradient(to bottom, $accent-color-primary-opacity 749px, transparent 749px),
+        linear-gradient(to bottom, $accent-color-primary-opacity $promo-image-height, transparent $promo-image-height),
         url("../../images/index-background-desktop@2x.webp"),
-        linear-gradient(to bottom, $accent-color-secondary 749px, transparent 749px);
+        linear-gradient(to bottom, $accent-color-secondary $promo-image-height, transparent $promo-image-height);
     }
   }
 }
