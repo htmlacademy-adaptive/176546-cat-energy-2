@@ -81,9 +81,9 @@
       url("../../images/catalog-background-tablet@2x.jpg");
 
     @supports (background-image: url("../../images/catalog-background-tablet@2x.webp")) {
-      background-image:
-      linear-gradient(to bottom, $accent-color-primary-opacity),
-      url("../../images/catalog-background-tablet@2x.webp");
+        background-image:
+          linear-gradient(to bottom, $accent-color-primary-opacity),
+          url("../../images/catalog-background-tablet@2x.webp");
     }
   }
 
@@ -97,12 +97,14 @@
   }
 
   @media (min-width: $desktop-width) and (min-resolution: 2dppx) {
-    background-image: linear-gradient(to bottom, $accent-color-primary-opacity),
-    url("../../images/catalog-background-desktop@2x.jpg");
+      background-image:
+        linear-gradient(to bottom, $accent-color-primary-opacity),
+        url("../../images/catalog-background-desktop@2x.jpg");
 
     @supports (background-image: url("../../images/catalog-background-desktop@2x.webp")) {
-      background-image: linear-gradient(to bottom, $accent-color-primary-opacity),
-      url("../../images/catalog-background-desktop@2x.webp");
+      background-image:
+        linear-gradient(to bottom, $accent-color-primary-opacity),
+        url("../../images/catalog-background-desktop@2x.webp");
     }
   }
 }
