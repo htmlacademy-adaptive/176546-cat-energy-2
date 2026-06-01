@@ -38,7 +38,7 @@
     }
   }
 
-  &--last-item picture {
+  &--last-item .catalog-item__picture {
     @media (min-width: $tablet-width) {
       transform: translateY(-15px);
     }
