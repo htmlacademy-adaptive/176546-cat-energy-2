@@ -74,3 +74,11 @@
     margin-top: 24px;
   }
 }
+
+.catalog-item__link {
+  color: $base-color-description;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
